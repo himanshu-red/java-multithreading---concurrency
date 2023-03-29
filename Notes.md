@@ -47,3 +47,8 @@ Eg: Ms Word that is printing and formating text at the same time.
 * All other threads called child threads are spawned from the main thread itself. 
 * The main method can then finish, but the program will keep running until all user threads have completed. 
 * The runtime environment distinguishes between user threads and daemon threads. 
+* Calling the setDaemon(boolean) method in the thread class marks the status of the thread as either daemon or user,
+  but this must be done before the thread is started. 
+* As long as a user thread is alive, the JVM doesn't terminate. 
+* A daemon thread is at the mercy of the runtime system: It stops if there is no more user thread running, 
+  thus terminating the program. 
