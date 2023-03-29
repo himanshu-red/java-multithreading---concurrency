@@ -52,3 +52,10 @@ Eg: Ms Word that is printing and formating text at the same time.
 * As long as a user thread is alive, the JVM doesn't terminate. 
 * A daemon thread is at the mercy of the runtime system: It stops if there is no more user thread running, 
   thus terminating the program. 
+
+## Thread Creation
+
+* A thread in java is represented by an object of the `Thread` class. 
+* Creating thread is achieved in one of the two ways. 
+  * Implementing the `java.lang.Runnable` interface. 
+  * Extending the `java.lang.Thread` class
